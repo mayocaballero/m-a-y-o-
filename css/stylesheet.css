@@ -1,0 +1,375 @@
+@font-face {
+font-family: 'basis-grotesque-off-white';
+src: url('../fonts/basis-grotesque-off-white.eot');
+src: url('../fonts/basis-grotesque-off-white-.eot#iefix') format('embedded-opentype'),
+	 url('../fonts/basis-grotesque-off-white.woff') format('woff'),
+	 url('../fonts/basis-grotesque-off-white.woff2') format('woff2'),
+	 url('../fonts/basis-grotesque-off-white.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'basis-grotesque-medium';
+    src: url('../fonts/basis-grotesque-medium.eot');
+    src: url('../fonts/basis-grotesque-medium-.eot#iefix') format('embedded-opentype'),
+    url('../fonts/basis-grotesque-medium.woff') format('woff'),
+    url('../fonts/basis-grotesque-medium.woff2') format('woff2'),
+    url('../fonts/basis-grotesque-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'basis-grotesque-regular';
+	src: url('../fonts/basis-grotesque-regular.eot');
+	src: url('../fonts/basis-grotesque-regular-.eot#iefix') format('embedded-opentype'),
+    url('../fonts/basis-grotesque-regular.woff') format('woff'),
+    url('../fonts/basis-grotesque-regular.woff2') format('woff2'),
+    url('../fonts/basis-grotesque-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'basis-grotesque-mono';
+    src: url('../fonts/basis-grotesque-mono.eot');
+    src: url('../fonts/basis-grotesque-mono-.eot#iefix') format('embedded-opentype'),
+    url('../fonts/basis-grotesque-mono.woff') format('woff'),
+    url('../fonts/basis-grotesque-mono.woff2') format('woff2'),
+    url('../fonts/basis-grotesque-mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'weather';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+	padding:0;
+	margin:0;
+}
+
+*::selection,
+.main::selection,
+br::selection,
+p::selection,
+h1::selection,
+mayLogo::selection,
+.footer::selection {
+
+	background-color: rgba(255, 255, 255, 0);
+	text-shadow: 0 0 15px;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+a, a:active {
+color: inherit;
+/*     text-shadow: 1px 4px 10px #fafafa, 0 0 0 #000, 1px 4px 10px #fafafa; */
+	text-decoration: none;
+
+}
+
+a:hover{
+	color: #FF6400;
+	text-decoration: none;
+
+/* 	  text-shadow:1px 3px 10px #fafafa, 4px 0px rgba(0,0,0,0.2), 0px 2px 1px #ffffff; */
+}
+
+
+li
+{
+	list-style: none;
+}
+
+body {
+	background: #fafafa;
+	color:#cccccc;
+	background-image: none;
+	font-family: "basis-grotesque-off-white",Arial,sans-serif;
+	text-align: left;
+	font-size: 9vw;
+	line-height: 1em;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: -0.035em;
+
+	transition: background 1s;
+	transition: color 1s;
+
+
+}
+
+
+
+.top{
+	padding-top: 1.5vw;
+	padding-left: 2.5vw;
+	padding-right: 2.5vw;
+}
+.bottom{
+	padding-bottom: 2.5vw;
+	padding-left: 2.5vw;
+	padding-right: 2.5vw;
+}
+
+.bottomVideo{
+	padding-bottom: 1.5vw;
+	padding-left: 2.5vw;
+	position: fixed;
+	bottom:0;
+}
+
+h2, .footer {
+	line-height: 7vw;
+	font-family: "basis-grotesque-regular",Arial,sans-serif;
+	letter-spacing:  -0.025em;
+	font-size:3.5vw;
+	font-weight: normal;
+}
+
+.mayMarquee {
+    color: #FF6400;
+    overflow: hidden;
+    height:1.1em;
+}
+.embed-responsive {
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -28.1%;
+    /* video height / video width */
+    padding-bottom: 56.2%;
+    height: 0;
+    overflow: none;
+    max-height: 95vw;
+
+}
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+i {
+	font-family: 'weather';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+  text-transform: none;
+}
+*/
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+
+.mayMarquee li{
+	display: inline;
+	margin-right: 6vw;
+}
+.mayMarquee #date{
+	margin-right:0;
+}
+/*
+
+#time {
+	font-family: "basis-grotesque-mono",Arial,sans-serif;
+}
+*/
+
+
+#mayLogo{
+	opacity:0;
+	display: inline-block;
+	animation:fadein  1s forwards ease-in;
+	-moz-animation:fadein 1s forwards ease-in-out;  /* Firefox */
+	-webkit-animation:fadein  1s forwards ease-in-out; /* Safari and Chrome */
+	-o-animation: fadein  1s forwards ease-in-out; /* Opera */
+	-moz-animation-delay:fadein 0.25s; /* Firefox */
+	-webkit-animation:fadein  0.25s ease-in-out forwards; /* Safari and Chrome */
+	-webkit-animation-delay: 0.25s; /* Safari 4.0 - 8.0 */
+
+}
+
+
+
+#logoShuffle{
+	width:6vw;
+	height:auto;
+	font-size: 9vw;
+	text-align: center;
+	max-width:6vw; /* or whatever width you want. */
+	display: inline-block;
+}
+
+
+#mayIntro{
+	display:inline;
+	width: auto;
+	height: 100%;
+}
+
+#mayServices{
+	margin-top:10vw;
+	margin-bottom: 10vw;
+}
+
+#mayIntro, #mayServices, #mayContact, #mayOutro, .mayMarquee, #mayNew, .footer {
+/* 	transition: 0s all;	  */
+	opacity: 0;
+	-webkit-animation:fadein  1s ease-in-out forwards; /* Safari and Chrome */
+	animation:fadein  1s ease-in-out forwards;
+	-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+	-moz-animation-delay:fadein 2s; /* Firefox */
+	animation-delay: 2s ;
+}
+#mayContact h2{
+	padding-top: 10vw;
+}
+#mayOutro {
+	padding-top: 10vw;
+}
+
+.color1 {
+	background: #fafafa;
+	color:#cccccc;
+	transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+
+.color2 {
+	background: #3514d8;
+	color:#fafafa;
+	transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.displayNone {
+   display: none;
+}
+
+.footer {
+		padding-top: 10vw;
+}
+
+
+
+ #footerShuffle {
+	width:3vw; /* or whatever width you want. */
+	display: inline-block;
+	text-align: center
+ }
+
+#maySaver{
+	padding: 0px;
+	margin:0px;
+
+	z-index:5;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+     }
+
+
+
+#weather li, #weather ul{
+	display:inline;
+}
+
+
+
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
